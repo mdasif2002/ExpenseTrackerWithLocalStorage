@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <form onsubmit="saveToLocalStorage(event)">
+    <label>choose expenseamount:</label>
+    <input type="number" name="expenseamount" id="amount">
+    <label>choose description:</label>
+    <input type="text" name="description" id="desc">
+    <label>choose a category:</label>
+    <select name="category" id="category">
+        <option value="movie">movie</option>
+        <option value="health">health</option>
+        <option value="tofee">tofee</option>
+        <option value="coffee">coffee</option>
+    </select>
+    &nbsp;&nbsp;
+    <button id="addbutton">Add Expense</button>
+    </form>
+
+    <ul id="listOfItems">
+    </ul>
+    <p id="demo"> </p>
+   
+</body>
+<script src="app.js"></script>
+</html>
